@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+     "lib": [
+        "es6"
+     ],
+     "target": "es6",
+     "module": "commonjs",
+     "moduleResolution": "node",
+     "outDir": "dist",
+     "resolveJsonModule": true,
+     "emitDecoratorMetadata": true,
+     "esModuleInterop": true,
+     "experimentalDecorators": true,
+     "sourceMap": true,
+      // Ensure that .d.ts files are created by tsc, but not .js files
+  "declaration": true,
+  "emitDeclarationOnly": true,
+  // Ensure that Babel can safely transpile files in the TypeScript project
+  "isolatedModules": true
+  },
+  "include": ["*.ts","src/*.ts"],
+  "exclude": ["node_modules"]
+}
